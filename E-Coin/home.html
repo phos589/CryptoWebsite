@@ -1,0 +1,79 @@
+<!DOCTYPE htlm>
+<html>
+  <head>
+    <title>E-Coin</title>
+    <link rel="icon" href="img/BNB.png" style="width: 100%; height: 100%;">
+    <link rel="stylesheet" href="style/home.css">
+  </head>
+  <body>
+    <nav>
+      <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ul>
+  </nav>
+  <section class="section1">
+    <div class="text">    
+      <img src="img/bitcoin.png"> 
+      Track and Trade Crypto currencies
+      <img src="img/Ethereum.png">
+    </div>
+
+    <div class="Show-Coin">
+      <div class="slot">
+        <img src="img/bitcoin.png" style="width: 100px;">
+        <div style="display: flex;">
+          <p style="margin-right: 10px;">Bitcoin:</p>
+          <p style="color: rgb(177, 1, 1);">-1.16%</p>
+        </div>
+        $22,272.00
+      </div>
+      <div class="slot">
+        <img src="img/Ethereum.png" style="width: 100px;">
+        <div style="display: flex;">
+          <p style="margin-right: 10px;">Ethereum:</p>
+          <p style="color: rgb(177, 1, 1);">-1.27%</p>
+        </div>
+        $1.554.70
+      </div>
+      <div class="slot">
+        <img src="img/Tether.png" style="width: 100px;">
+        <div style="display: flex;">
+          <p style="margin-right: 10px;">Tether:</p>
+          <p style="color: rgb(1, 177, 1);">1.00%</p>
+        </div>
+        $1,23.00
+      </div>
+      <div class="slot">
+        <img src="img/BNB.png" style="width: 100px;">
+        <div style="display: flex;">
+          <p style="margin-right: 10px;">Bitcoin:</p>
+          <p style="color: rgb(177, 1, 1);">-0.36%</p>
+        </div>
+        $237.70
+      </div>
+    </div>
+  </section>
+  <section>
+    <table>
+      <thead>
+          <tr>
+              <th>Coin</th>
+              <th>Price</th>
+              <th>24h Change</th>
+              <th>Market Cap</th>
+          </tr>
+      </thead>
+      <tbody id="coinList">
+
+      </tbody>
+  </table>
+  <div id="pagination"></div>
+
+  </section>
+  
+    <script type="module" src="script/home.js"></script>
+  </body>
+</html>
