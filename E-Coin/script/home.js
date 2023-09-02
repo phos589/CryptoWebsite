@@ -6,17 +6,35 @@ const coinsPerPage = 5;
 let currentPage = 1;
 
 function displayCoins(start, end) {
-    coinList.innerHTML = ''; 
+    coinList.innerHTML = '';
 
     for (let i = start; i < end && i < cryptoData.length; i++) {
         const crypto = cryptoData[i];
         const row = document.createElement('tr');
-        row.innerHTML = `
-        <td style="display: flex; align-items: center;"><img src="${crypto.image}" alt="${crypto.name}" style="width: 100px;">${crypto.name}</td>
-        <td>${crypto.price}</td>
-        <td>${crypto.change}</td>
-        <td>${crypto.marketCap}</td>
-        `;
+        
+        // Check if crypto.change contains a "-"
+        if (crypto.change.includes("-")) {
+            row.innerHTML = `
+                <td style="display: flex; align-items: center;">
+                    <img src="${crypto.image}" alt="${crypto.name}" style="width: 100px;">
+                    <span>${crypto.name}</span>
+                </td>
+                <td>${crypto.price}</td>
+                <td style="color: rgb(200, 2, 2);">${crypto.change}</td>
+                <td>${crypto.marketCap}</td>
+            `;
+        } else {
+            row.innerHTML = `
+                <td style="display: flex; align-items: center;">
+                    <img src="${crypto.image}" alt="${crypto.name}" style="width: 100px;">
+                    <span>${crypto.name}</span>
+                </td>
+                <td>${crypto.price}</td>
+                <td style="color: rgb(1, 200, 1);">${crypto.change}</td>
+                <td>${crypto.marketCap}</td>
+            `;
+        }
+        
         coinList.appendChild(row);
     }
 }
@@ -54,4 +72,3 @@ function updatePaginationButtons() {
 displayCoins(0, coinsPerPage);
 createPaginationButtons();
 updatePaginationButtons();
-

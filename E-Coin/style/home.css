@@ -1,28 +1,35 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
-  color: #334;
+  background: linear-gradient(to right, #252525, #161616, #060606, #030303, #000000); 
+  color: #ffffff;
   margin: 0;
   padding: 0;
+
 }
 nav {
-  background-color: #334;
+  position: fixed;
   overflow: hidden;
   min-height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  border-bottom: 1px solid gray;
+  text-align: center;
+  background: linear-gradient(to right, #252525, #161616, #060606, #030303, #000000); 
 }
 
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  margin-top: 10px;
 }
+
 
 nav li {
   display: inline;
   margin-right: 20px;
+  
 }
 
 nav a {
@@ -74,7 +81,7 @@ margin-left: 40px;
       transform: translateY(0);
   }
   100% {
-      transform: translateY(-5px); /
+      transform: translateY(5px); /
   }
 }
 @keyframes moveUpDown {
@@ -91,20 +98,23 @@ table {
   border-collapse: collapse;
   margin: 0 auto; 
   margin-top: 50vh;
+  background: whitesmoke; 
 }
 
 th, td {
-  border: 1px solid #dddddd;
+  border: 1px solid #c9c9c9;
   text-align: left;
   padding: 8px;
+  color: #334;
 }
 
 th {
-  background-color: #f2f2f2;
+  background-color: #012944; 
+  color: #ffffff;
 }
 
 button {
-  background-color: #000000;
+  background-color: #131313;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -119,5 +129,49 @@ button.active {
 
 #pagination {
   text-align: center;
+  margin-top: 20px;
+}
+tr:nth-child(even) {
+  background-color: whitesmoke;
+}
+tr:nth-child(odd) {
+  background-color: #f1f1f1; 
+}
+/*section 3*/
+.why-choose-us {
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.why-choose-us h2 {
+  color: #b4b4b4;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px;
+  align-items: center;
+}
+.why-choose-us div {
+  border-radius: 5px;
+  padding: 20px;
+  text-align: left;
+}
+.why-choose-us h3 {
+  display: flex;
+  align-items: center;
+  color: #1861af;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.why-choose-us p {
+  color: #dfdfdf;
+  font-size: 16px;
+}
+.why-choose-us p.cta {
+  color: #0155ad; 
+  font-weight: bold;
   margin-top: 20px;
 }

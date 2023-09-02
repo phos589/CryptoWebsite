@@ -139,5 +139,39 @@ export const cryptoData = [
   change: '87.03%',
   marketCap: '$15B',
 },
-
+{
+  image: '../img/Ark.png',
+  name: 'Ark ',
+  price: '$0.64',
+  change: '-45.03%',
+  marketCap: '$15M',
+},
+{
+  image: '../img/Enjin Coin.png',
+  name: 'Enjin Coin ',
+  price: '$109.64',
+  change: '9.33%',
+  marketCap: '$150M',
+},
+{
+  image: '../img/Zilliqa.png',
+  name: 'Zilliqa',
+  price: '$210.00',
+  change: '20.24%',
+  marketCap: '$156M',
+},
+{
+  image: '../img/Hedera Hashgraph.png',
+  name: 'HBAR',
+  price: '$00.99',
+  change: '-43.00%',
+  marketCap: '$2M',
+},
+{
+  image: '../img/Cosmos.png',
+  name: 'Cosmos ',
+  price: '$0.01',
+  change: '99.00%',
+  marketCap: '$5M',
+},
 ];
