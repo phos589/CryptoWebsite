@@ -98,25 +98,24 @@ table {
   border-collapse: collapse;
   margin: 0 auto; 
   margin-top: 50vh;
-  background: whitesmoke; 
 }
 
 th, td {
-  border: 1px solid #c9c9c9;
+  border: 1px solid #c9c9c9cc;
   text-align: left;
   padding: 8px;
   color: #334;
+  color: #ffffff;
 }
 
 th {
   background-color: #012944; 
-  color: #ffffff;
 }
 
-button {
+button{
   background-color: #131313;
   color: #fff;
-  border: none;
+  border: 1px solid white;
   border-radius: 4px;
   padding: 5px 10px;
   margin-right: 5px;
@@ -125,23 +124,20 @@ button {
 
 button.active {
   background-color: #e74c3c;
+  border: 1px solid white;
 }
 
 #pagination {
   text-align: center;
   margin-top: 20px;
 }
-tr:nth-child(even) {
-  background-color: whitesmoke;
-}
-tr:nth-child(odd) {
-  background-color: #f1f1f1; 
-}
+
 /*section 3*/
 .why-choose-us {
   padding: 20px;
   border-radius: 10px;
   text-align: center;
+  margin-top: 30vh;
 }
 .why-choose-us h2 {
   color: #b4b4b4;
@@ -150,6 +146,8 @@ tr:nth-child(odd) {
 }
 .feature-grid {
   display: grid;
+  margin-right: 30vh;
+  margin-left: 30vh;
   grid-template-columns: repeat(4, 1fr); 
   gap: 20px;
   align-items: center;
@@ -174,4 +172,13 @@ tr:nth-child(odd) {
   color: #0155ad; 
   font-weight: bold;
   margin-top: 20px;
+}
+.joinButton{
+  display: flex;
+  justify-content: center;
+}
+/* section 4*/
+.image{
+  display: flex;
+  justify-content: space-between;
 }

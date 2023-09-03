@@ -1,0 +1,58 @@
+<!DOCTYPE htlm>
+<html>
+  <head>
+    <title>E-Coin About Us</title>
+    <link rel="icon" href="img/bitcoin.png">
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/aboutUs.css">
+    <link rel="stylesheet" href="style/Contact.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="aboutUs.html">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+      </nav>
+  </header>
+
+<main>
+    <section id="contact-form">
+        <h2>Contact Form</h2>
+        <form action="process_contact.php" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+</main>
+
+  <section id="contact">
+
+      <h2>Contact Us</h2>
+      <p>If you have any questions or would like to get in touch with us, please feel free to reach out:</p>
+      <ul style="margin: 10px;">
+          <li>Email: <a href="mailto:contact@cryptoworld.com">test@gmail.com</a></li>
+          <li>Phone: +1 (123) 42-42-564</li>
+          <li>Address: 123 Main Street, Crypto City, CA 12345</li>
+      </ul>
+  </section>
+
+  <footer>
+      <p>&copy; 2023 CryptoWorld. All rights reserved.</p>
+  </footer>
+
+    <script type="module" src="script/Contact.js"></script>
+  </body>
+</html>
